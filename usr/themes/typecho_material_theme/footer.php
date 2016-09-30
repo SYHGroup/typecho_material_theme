@@ -1,18 +1,12 @@
-
-	<!--
-	<script src="//cdn.bootcss.com/bootstrap-material-design/0.3.0/js/material.min.js"></script>
-	<script src="//cdn.bootcss.com/bootstrap-material-design/0.3.0/js/ripples.min.js"></script>
-	-->
 	</div>
 	</div>
 	<footer>
 		<div class="footer-bottom">
 			<div class="container">
-				<div class="pull-left copyright">Copyright &copy; 2016&nbsp;<?php $this->options->title(); ?></div>
+				<div class="pull-left copyright">Copyright &copy; <?php _e(date('Y'));?>&nbsp;<?php $this->options->title(); ?></div>
 				<ul class="footer-nav pull-right">
 					<li>Powered by <a href="http://typecho.org/" rel="nofollow">Typecho)))</a></li>
 					<?php if (!empty($this->options->misc) && in_array('ShowThemeCopyRight', $this->options->misc)): ?>
-					<li>Designed by <a href="https://ikk.me">kookxiang</a></li>
 					<li>Optimized by <a href="http://hanc.cc">HanSon</a></li>
 					<?php endif;?>
 
@@ -29,7 +23,7 @@
 	</footer>
 
 	<?php $this->footer(); ?>
-	<script src="<?php $this->options->themeUrl('js/jquery-2.1.4.min.js'); ?>"></script>
+	<script src="<?php $this->options->themeUrl('js/jquery.min.js'); ?>"></script>
 	<script src="<?php $this->options->themeUrl('js/bootstrap.min.js'); ?>"></script>
 	<script src="<?php $this->options->themeUrl('js/material.min.js'); ?>"></script>
 	<script src="<?php $this->options->themeUrl('js/ripples.min.js'); ?>"></script>
