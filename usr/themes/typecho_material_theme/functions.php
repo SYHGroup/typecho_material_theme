@@ -3,13 +3,13 @@
 function themeConfig($form)  {
     $billboard = new Typecho_Widget_Helper_Form_Element_Text('billboard', NULL, _t('http://hanc.cc/usr/themes/typecho_material_theme/img/billboard.jpg'), _t('首页图片'), _t('在这里填入一个图片URL, 作为首页图片'));
     $form->addInput($billboard);
-    $slogan = new Typecho_Widget_Helper_Form_Element_Text('slogan', NULL, NULL, _t('首页图片主标语'), _t('在这里填入一段文字，作为首页图片中的主要文字，留空则不显示'));
+    $slogan = new Typecho_Widget_Helper_Form_Element_Text('slogan', NULL, _t('simonsmh后花园'), _t('首页图片主标语'), _t('在这里填入一段文字，作为首页图片中的主要文字，留空则不显示'));
     $form->addInput($slogan);
     $leanSlogan = new Typecho_Widget_Helper_Form_Element_Text('leanSlogan', NULL, NULL, _t('首页图片副标语'), _t('在这里填入一段文字，作为首页图片中的附加文字，留空则不显示'));
     $form->addInput($leanSlogan);
-    $siteIcon = new Typecho_Widget_Helper_Form_Element_Text('siteIcon', NULL, NULL, _t('标题栏和书签栏 Icon'), _t('在这里填入一个图片URL, 作为标题栏和书签栏 Icon, 默认不显示'));
+    $siteIcon = new Typecho_Widget_Helper_Form_Element_Text('siteIcon', NULL,  _t('https://blog.simonsmh.tk/favicon.ico'), _t('标题栏和书签栏 Icon'), _t('在这里填入一个图片URL, 作为标题栏和书签栏 Icon, 默认不显示'));
     $form->addInput($siteIcon);
-    $miibeian = new Typecho_Widget_Helper_Form_Element_Text('miibeian', NULL, _t('粤ICP备14072384号-2'), _t('备案号'), _t('在这里填入天朝备案号，留空则不显示'));
+    $miibeian = new Typecho_Widget_Helper_Form_Element_Text('miibeian', NULL, NULL, _t('备案号'), _t('在这里填入网站备案号，留空则不显示'));
     $form->addInput($miibeian);
     $misc = new Typecho_Widget_Helper_Form_Element_Checkbox('misc', array(
         'ShowLogin' => _t('前台显示登录入口'),
