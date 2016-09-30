@@ -18,7 +18,7 @@ function themeConfig($form)  {
         'ShowThemeCopyRight' => _t('页脚显示模板版权'),
         'ShowLoadTime' => _t('页脚显示加载耗时'),
     ),
-        array('ShowLogin'), _t('杂项'));
+        array('ShowLogin','ShowThemeCopyRight','ShowLoadTime'), _t('杂项'));
     $form->addInput($misc->multiMode());
 }
 
