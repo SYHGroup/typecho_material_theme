@@ -1,13 +1,13 @@
 <?php
 
 function themeConfig($form)  {
-    $billboard = new Typecho_Widget_Helper_Form_Element_Text('billboard', NULL, _t('./usr/themes/typecho-material-theme/pixiv.php?num=0'), _t('首页图片'), _t('在这里填入一个图片URL, 作为首页图片'));
+    $billboard = new Typecho_Widget_Helper_Form_Element_Text('billboard', NULL, _t('../usr/themes/typecho-material-theme/img/pixiv.php?num=0'), _t('首页图片'), _t('在这里填入一个图片URL, 作为首页图片'));
     $form->addInput($billboard);
     $slogan = new Typecho_Widget_Helper_Form_Element_Text('slogan', NULL, _t('simonsmh后花园'), _t('首页图片主标语'), _t('在这里填入一段文字，作为首页图片中的主要文字，留空则不显示'));
     $form->addInput($slogan);
     $leanSlogan = new Typecho_Widget_Helper_Form_Element_Text('leanSlogan', NULL, NULL, _t('首页图片副标语'), _t('在这里填入一段文字，作为首页图片中的附加文字，留空则不显示'));
     $form->addInput($leanSlogan);
-    $siteIcon = new Typecho_Widget_Helper_Form_Element_Text('siteIcon', NULL,  _t('./usr/themes/typecho-material-theme/favicon.ico'), _t('标题栏和书签栏 Icon'), _t('在这里填入一个图片URL, 作为标题栏和书签栏 Icon, 默认不显示'));
+    $siteIcon = new Typecho_Widget_Helper_Form_Element_Text('siteIcon', NULL,  _t('../usr/themes/typecho-material-theme/img/favicon.ico'), _t('标题栏和书签栏 Icon'), _t('在这里填入一个图片URL, 作为标题栏和书签栏 Icon, 默认不显示'));
     $form->addInput($siteIcon);
     $miibeian = new Typecho_Widget_Helper_Form_Element_Text('miibeian', NULL, NULL, _t('备案号'), _t('在这里填入网站备案号，留空则不显示'));
     $form->addInput($miibeian);
