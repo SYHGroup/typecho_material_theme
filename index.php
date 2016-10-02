@@ -12,7 +12,7 @@
 $this->need('header.php');
 ?>
 <section class="billboard">
-+<style>.billboard { background: #b8d9fa url(<?php $this->options->billboard()?>) 50% 0 repeat-x; background-size: cover; }</style>
+<style>.billboard { background: #b8d9fa url(<?php $this->options->billboard()?>) 0 30% repeat-x; background-size: cover; }</style>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-7">
