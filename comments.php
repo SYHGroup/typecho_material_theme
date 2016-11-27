@@ -19,8 +19,8 @@
 		        <!-- 如果当前用户已经登录 -->
 		        <?php if($this->user->hasLogin()): ?>
 		            <!-- 显示当前登录用户的用户名以及登出连接 -->
-		            <p>Logged in as <a href="<?php $this->options->adminUrl(); ?>"><?php $this->user->screenName(); ?></a>.
-		            <a href="<?php $this->options->logoutUrl(); ?>" title="Logout">Logout &raquo;</a></p>
+		            <p>已以 <a href="<?php $this->options->adminUrl(); ?>"><?php $this->user->screenName(); ?></a> 身份登陆。
+		            <a href="<?php $this->options->logoutUrl(); ?>" title="Logout"> 登出 &raquo;</a></p>
 
 		        <!-- 若当前用户未登录 -->
 		        <?php else: ?>
@@ -60,13 +60,15 @@
 		    			<div class="form-control-wrapper">
 		    				<textarea rows="9" cols="50" name="text" id="textarea" class="form-control textarea  empty" required=""></textarea>
 		    				<span class="material-input"></span>
+						<?php if(class_exists('Smilies_Plugin')){Smilies_Plugin::output();} ?>
 		    			</div>
 		    		</div>
 		    	</div>
+
 		    	<div class="form-group">
 		    		<div class="col-sm-offset-2 col-sm-5">
 		    			<button type="submit" id="submit" class="btn btn-success btn-raised submit">提交评论</button>
-		    		</div>
+				</div>
 		    	</div>
 		    </form>
 	</div>

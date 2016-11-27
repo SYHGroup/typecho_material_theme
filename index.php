@@ -38,11 +38,11 @@ $this->need('header.php');
 			        	<span>分类：<?php $this->category(','); ?> | </span>
 			        	<span>评论：<a href="<?php $this->permalink() ?>"><?php $this->commentsNum('%d 评论'); ?></a> </span>
 			        </div>
-			        <div class="post-content"><?php $this->content('Continue Reading...'); ?></div>
+			        <div class="post-content"><?php $this->content('- 阅读全文 -'); ?></div>
 			    </div>
 		    </div>
 		    <?php endwhile; ?>
-		    <?php $this->pageNav('<< 上一页', '下一页 >>'); ?>
+		    <?php $this->pageNav('&laquo; 前一页', '后一页 &raquo;'); ?>
 		</div>
 
 	<?php $this->need('sidebar.php'); ?>
