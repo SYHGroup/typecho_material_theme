@@ -1,5 +1,5 @@
 <?php
-
+if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 function themeConfig($form)  {
     $billboard = new Typecho_Widget_Helper_Form_Element_Text('billboard', NULL, _t('/usr/themes/typecho_material_theme/img/pixiv.php?num=0'), _t('首页图片'), _t('在这里填入一个图片URL, 作为首页图片'));
     $form->addInput($billboard);
