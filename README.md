@@ -1,30 +1,33 @@
-﻿# typecho-material-theme
-Material Design Theme For Typecho  
-Fork of ikk.me  
+﻿# Typecho Material Theme
+Material Design Theme For Typecho    
 
-#feature
+# 合并功能
 
-_自定义图片与标语_
+- HanSon:  
 
-_分类导航栏显示_
+ _自定义图片与标语_
 
-_备案号自定义_
+ _分类导航栏显示_
 
-_定义是否显示加载时间_
+ _备案号自定义_
 
-crysehillmes:  
+- crysehillmes:  
 
-_Google Analysis自定义_
+ _Google Analysis自定义_
 
-Yves-X:  
+- Yves-X:  
 
-_背景图片自定义_
+ _背景图片自定义_
 
-_回到顶部_
+ _回到顶部_
 
-_代码高亮_
+ _代码高亮_
 
-#other
+- hcrgm:
+
+ _改进加载时间_
+
+# 插件
 
 如需使用友情链接，请使用以下链接的插件
 
