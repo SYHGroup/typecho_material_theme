@@ -37,10 +37,16 @@ Material Design Theme For Typecho
 
 # 插件
 
-如需使用[友情链接](https://github.com/HanSon/Links_for_Material_Theme)和[表情插件](https://github.com/simonsmh/TiebaSmilies_Typecho)，请使用以下链接的插件
+如需使用[友情链接](https://github.com/HanSon/Links_for_Material_Theme)和[表情插件](https://github.com/simonsmh/TiebaSmilies_Typecho)，请使用以下链接的插件  
 
 ```
 cd usr/plugins
 git clone https://github.com/HanSon/Links_for_Material_Theme.git Links
 git clone https://github.com/simonsmh/TiebaSmilies_Typecho.git Smilies
 ```
+
+[自带Pixiv排行抓取程序](https://github.com/simonsmh/Pixiv-Ranking-PHP)  
+
+不能上p站的推荐使用这个背景  
+
+`https://manage.conoha.jp/Content/Images/ConoHa/ConoHaMode/bg_conoha.jpg`
