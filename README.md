@@ -3,6 +3,12 @@ Material Design Theme For Typecho
 
 # 合并功能
 
+- simonsmh:  
+
+ _翻译_
+
+ _表情插件_
+
 - HanSon:  
 
  _自定义图片与标语_
@@ -10,6 +16,8 @@ Material Design Theme For Typecho
  _分类导航栏显示_
 
  _备案号自定义_
+ 
+ _友情链接_
 
 - crysehillmes:  
 
@@ -29,6 +37,10 @@ Material Design Theme For Typecho
 
 # 插件
 
-如需使用友情链接，请使用以下链接的插件
+如需使用[友情链接](https://github.com/HanSon/Links_for_Material_Theme)和[表情插件](https://github.com/simonsmh/TiebaSmilies_Typecho)，请使用以下链接的插件
 
-`https://github.com/Hanccc/Links-for-Material-Theme`
+```
+cd usr/plugins
+git clone https://github.com/HanSon/Links_for_Material_Theme.git Links
+git clone https://github.com/simonsmh/TiebaSmilies_Typecho.git Smilies
+```
