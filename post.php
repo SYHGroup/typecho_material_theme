@@ -13,7 +13,7 @@
                         <span>分类：<?php $this->category(','); ?> | </span>
                         <span>评论：<a href="<?php $this->permalink() ?>"><?php $this->commentsNum('%d 评论'); ?></a> </span>
                     </div>
-                    <div class="post-content"><?php $this->content('阅读全文...'); ?></div>
+                    <div class="post-content"><?php $this->content('- 阅读全文 -'); ?></div>
                 </div>
             </div>
             <p class="tags">标签：<?php $this->tags(' , ', true, ''); ?></p>

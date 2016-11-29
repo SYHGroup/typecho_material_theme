@@ -30,7 +30,7 @@
                     </article>
                 <?php endif; ?>
 
-            <?php $this->pageNav('&laquo; 前一页', '后一页 &raquo;'); ?>
+            <?php $this->pageNav('&laquo;', '&raquo;'); ?>
 
         </div>
         <?php $this->need('sidebar.php'); ?>
