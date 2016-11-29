@@ -1,12 +1,12 @@
 <?php
 
 /**
- * 这是HanSon 基于material 的Typecho模板
+ * 这是<a href="https://simonsmh.cc">simonsmh</a>基于<a href="https://github.com/HanSon/typecho_material_theme">HanSon</a>的Typecho质感化设计主题
  *
  * @package Material Theme
- * @author HanSon
- * @version 2.0.0
- * @link http://hanc.cc
+ * @author simonsmh
+ * @version 3.0
+ * @link https://github.com/simonsmh/typecho_material_theme
  */
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 $this->need('header.php');
