@@ -1,6 +1,6 @@
 <?php
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
-function themeConfig($form)  {
+function themeConfig($form) {
 
     $billboard = new Typecho_Widget_Helper_Form_Element_Text('billboard', NULL, _t('https://manage.conoha.jp/Content/Images/ConoHa/ConoHaMode/bg_conoha.jpg'), _t('首页图片'), _t('在这里填入一个图片URL, 作为首页图片<p style="word-break:break-all">默认URL：https://manage.conoha.jp/Content/Images/ConoHa/ConoHaMode/bg_conoha.jpg</p>'));
     $form->addInput($billboard);
@@ -20,10 +20,11 @@ function themeConfig($form)  {
     $googleAnalyticsTrackingId = new Typecho_Widget_Helper_Form_Element_Text('googleAnalyticsTrackingId', NULL, _t('UA-73742380-2'), _t('Google Analytics Tracking ID'), _t('在这里填入 Google Analytics Tracking ID，不使用 Google Analytics 则留空'));
     $form->addInput($googleAnalyticsTrackingId);
 
-    $datearchivetype = new Typecho_Widget_Helper_Form_Element_Text('datearchivetype', NULL,  _t('month'), _t('归档模式'), _t('在这里填入归档模式：year month day'));
+    $datearchivetype = new Typecho_Widget_Helper_Form_Element_Select('datearchivetype',
+array('year'=>_t('按年排序'),'month'=>_t('按月排序'),'day'=>_t('按日排序')),'month', _t('归档模式'), _t('在这里选择归档模式'));
     $form->addInput($datearchivetype);
 
-    $datearchiveformat = new Typecho_Widget_Helper_Form_Element_Text('datearchiveformat', NULL,  _t('Y年 m月'), _t('归档时间格式'), _t('在这里填入归档时间格式，具体写法请参考<a href="http://www.php.net/manual/zh/function.date.php" target="_blank">PHP 日期格式写法</a>'));
+    $datearchiveformat = new Typecho_Widget_Helper_Form_Element_Text('datearchiveformat', NULL,  _t('Y年 m月'), _t('归档时间格式'), _t('在这里填入归档时间格式，请务必根据归档模式修改，具体写法请参考<a href="http://www.php.net/manual/zh/function.date.php" target="_blank">PHP 日期格式写法</a>'));
     $form->addInput($datearchiveformat);
 
     $misc = new Typecho_Widget_Helper_Form_Element_Checkbox('misc',array(
@@ -42,7 +43,7 @@ function timer_start() {
 }
 timer_start();
  
-function timer_stop( $display = 0, $precision = 3 ) {
+function timer_stop($display = 0,$precision = 3) {
     global $timestart, $timeend;
     $mtime = explode( ' ', microtime() );
     $timeend = $mtime[1] + $mtime[0];
