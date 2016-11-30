@@ -45,8 +45,5 @@ git clone https://github.com/HanSon/Links_for_Material_Theme.git Links
 git clone https://github.com/simonsmh/TiebaSmilies_Typecho.git Smilies
 ```
 
-[自带Pixiv排行抓取程序](https://github.com/simonsmh/Pixiv-Ranking-PHP)  
+[广告：Pixiv排行抓取程序](https://github.com/simonsmh/Pixiv-Ranking-PHP)  
 
-不能上p站的推荐使用这个背景  
-
-`https://manage.conoha.jp/Content/Images/ConoHa/ConoHaMode/bg_conoha.jpg`

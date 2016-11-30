@@ -54,7 +54,7 @@
 	        <h3 class="panel-title">归档</h3>
 	    </a>
 	    <div class="article_cate_box">
-	       <?php $this->widget('Widget_Contents_Post_Date', 'type=month&format=Y年 m月')
+	       <?php $this->widget('Widget_Contents_Post_Date','type='.$this->options->datearchivetype.'&format='.$this->options->datearchiveformat)
 	        ->parse('<a href="{permalink}" class="item">{date}</a>'); ?>
 	    </div>
 	</div>
