@@ -6,10 +6,10 @@
 
 <?php if($this->allow('comment')): ?>
 <div class="alert alert-info">
-    <span id="commentCount"><?php $this->commentsNum(_t('还不快抢沙发'), _t('只有地板了'), _t('已有 %d 条评论')); ?></span>
+    <span id="commentCount"><?php $this->commentsNum(_t('暂时没有评论'),_t('已有 %d 条评论')); ?></span>
 </div>
 <?php $comments->listComments(); ?>
-<?php $comments->pageNav('&laquo; 前一页', '后一页 &raquo;'); ?>
+<?php $comments->pageNav('&laquo;', '&raquo;'); ?>
 <div id="<?php $this->respondId(); ?>" class="respond">
 <div class="respond panel panel-default">
 	<div class="panel-body">
