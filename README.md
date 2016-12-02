@@ -1,13 +1,18 @@
 ﻿# Typecho Material Theme
-Material Design Theme For Typecho    
+ 
+Material Design Theme For Typecho  
 
-# 合并功能
+![截图](https://github.com/simonsmh/typecho_material_theme/blob/master/screenshot.png)  
+
+# Feature
 
 - simonsmh:  
 
  _翻译_
 
  _表情插件_
+
+ _日期归档修改_
 
 - HanSon:  
 
@@ -35,7 +40,7 @@ Material Design Theme For Typecho
 
  _改进加载时间_
 
-# 插件
+# Plugin
 
 如需使用[友情链接](https://github.com/HanSon/Links_for_Material_Theme)和[表情插件](https://github.com/simonsmh/TiebaSmilies_Typecho)，请使用以下链接的插件  
 
