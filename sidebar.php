@@ -10,7 +10,6 @@
 			</span>
 		</div>
 	</form>
-
 	<div class="panel panel-info">
 	    <a class="panel-heading" onclick="$('.recent_posts_box').slideToggle()" href="javascript:;">
 	        <h3 class="panel-title">最新文章</h3>
@@ -20,7 +19,6 @@
 	        ->parse('<a href="{permalink}" class="item">{title}</a>'); ?>
 	    </div>
 	</div>
-
 	<?php $this->widget('Widget_Comments_Recent')->to($comments); ?>
 	<div class="panel panel-info">
 	    <a class="panel-heading" onclick="$('.comments_box').slideToggle()" href="javascript:;">
@@ -32,7 +30,6 @@
 			<?php endwhile; ?>
 	    </div>
 	</div>
-
 	<?php $this->widget('Widget_Metas_Tag_Cloud', 'sort=count&ignoreZeroCount=1&desc=1&limit=5')->to($tags); ?>
 	<div class="panel panel-info">
 	    <a class="panel-heading" onclick="$('.tags_box').slideToggle()" href="javascript:;">
@@ -48,7 +45,6 @@
 			<?php endif; ?>
 		</div>
 	</div>
-
 	<div class="panel panel-info">
 	    <a class="panel-heading" onclick="$('.article_cate_box').slideToggle()" href="javascript:;">
 	        <h3 class="panel-title">归档</h3>
@@ -69,7 +65,6 @@
 		</div>
 	</div>
 	<?php endif; ?>
-
 	<div class="panel panel-info">
 	    <a class="panel-heading" onclick="$('.other_box').slideToggle()" href="javascript:;">
 	        <h3 class="panel-title">其他</h3>
@@ -79,5 +74,4 @@
 	       <a href="<?php $this->options->commentsFeedUrl(); ?>" class="item"><?php _e('评论 RSS'); ?></a>
 	    </div>
 	</div>
-
 </div>
