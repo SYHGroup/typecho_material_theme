@@ -47,7 +47,7 @@
 					<?php while($category->next()): ?>
 					<?php if(count($category->children)):?>
 					<li class="dropdown">
-						<a href="#" data-target="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $category->name?><b class="caret"></b></a>
+						<a href="<?php $category->permalink(); ?>" data-target="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $category->name?><b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li><a href="<?php echo $category->permalink(); ?>"><?php echo $category->name ?></a></li>
 							<?php foreach($category->children as $k=>$v):?>
@@ -67,7 +67,7 @@
 					<?php endwhile; ?>
 				</ul>
 				<?php if ( !empty($this->options->misc) && in_array('ShowLogin', $this->options->misc) ) : ?>
-				<ul data-no-instant class="nav navbar-nav navbar-right">
+				<ul class="nav navbar-nav navbar-right">
 				<?php if($this->user->hasLogin()): ?>
 					<li><a href="<?php $this->options->adminUrl(); ?>"><?php $this->user->screenName(); ?></a></li>
 					<li><a href="<?php $this->options->logoutUrl(); ?>">登出</a></li>

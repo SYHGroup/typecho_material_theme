@@ -1,6 +1,6 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit;$this->comments()->to($comments); ?>
 <div class="row">
-	<div data-no-instant id="comments">
+	<div id="comments">
 		<?php if($this->allow('comment')): ?>
 		<div class="alert alert-info"><span id="commentCount"><?php $this->commentsNum(_t('暂时没有评论'),_t('已有 %d 条评论')); ?></span></div>
 		<?php $comments->listComments();$comments->pageNav('&laquo;', '&raquo;'); ?>
