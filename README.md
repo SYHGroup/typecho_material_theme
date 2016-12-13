@@ -42,6 +42,8 @@ Material Design Theme For Typecho
 
  _改进加载时间_
 
+ _pjax (instantclick)优化_
+
 # Plugin
 
 如需使用[友情链接](https://github.com/HanSon/Links_for_Material_Theme)和[表情插件](https://github.com/simonsmh/TiebaSmilies_Typecho)，请使用以下链接的插件  

@@ -24,12 +24,13 @@
 	</div>
 </footer>
 <?php $this->footer(); ?>
-<script src="<?php $this->options->themeUrl('js/jquery.min.js'); ?>"></script>
-<script src="<?php $this->options->themeUrl('js/bootstrap.min.js'); ?>"></script>
-<script src="<?php $this->options->themeUrl('js/material.min.js'); ?>"></script>
-<script src="<?php $this->options->themeUrl('js/ripples.min.js'); ?>"></script>
-<script>$.material.init();</script>
-<link rel="stylesheet" href="<?php $this->options->themeUrl('css/extra.min.css'); ?>">
-<script src="<?php $this->options->themeUrl('js/extra.min.js');?>"></script>
+<script data-no-instant src="<?php $this->options->themeUrl('js/jquery.min.js'); ?>"></script>
+<script data-no-instant src="<?php $this->options->themeUrl('js/bootstrap.min.js'); ?>"></script>
+<script data-no-instant src="<?php $this->options->themeUrl('js/material.min.js'); ?>"></script>
+<script data-no-instant src="<?php $this->options->themeUrl('js/ripples.min.js'); ?>"></script>
+<script data-no-instant src="<?php $this->options->themeUrl('js/instantclick.min.js'); ?>"></script>
+<script data-no-instant src="<?php $this->options->themeUrl('js/extra.min.js');?>"></script>
+<script data-no-instant>$.material.init();</script>
+<script data-no-instant>InstantClick.init();</script>
 </body>
 </html>
