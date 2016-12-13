@@ -16,6 +16,9 @@
 				<?php if ( !empty($this->options->misc) && in_array('ShowLoadTime', $this->options->misc) ) : ?>
 				<li>加载耗时：<?php echo timer_stop(); ?></li>
 				<?php endif; ?>
+				<?php if ( !empty($this->options->misc) && in_array('ShowCCBY', $this->options->misc) ) : ?>
+				<li><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a></li>
+				<?php endif; ?>
 			</ul>
 		</div>
 	</div>

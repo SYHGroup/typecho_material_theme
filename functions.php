@@ -19,7 +19,7 @@ function themeConfig($form) {
 	$datearchiveformat = new Typecho_Widget_Helper_Form_Element_Text('datearchiveformat', NULL,  _t('Y年 m月'), _t('归档时间格式'), _t('在这里填入归档时间格式, 请务必根据归档模式修改, 具体写法请参考<a href="http://www.php.net/manual/zh/function.date.php" target="_blank">PHP 日期格式写法</a>'));
 	$form->addInput($datearchiveformat);
 	$misc = new Typecho_Widget_Helper_Form_Element_Checkbox('misc',
-	array('ShowLogin' => _t('前台显示登录入口'),'ShowThemeCopyRight' => _t('页脚显示模板版权'),'ShowLoadTime' => _t('页脚显示加载耗时'),),array('ShowLogin','ShowThemeCopyRight','ShowLoadTime'), _t('杂项'));
+	array('ShowLogin' => _t('前台显示登录入口'),'ShowThemeCopyRight' => _t('页脚显示模板版权'),'ShowLoadTime' => _t('页脚显示加载耗时'),'ShowCCBY' => _t('允许CC-BY授权')),array('ShowLogin','ShowLoadTime','ShowCCBY'), _t('杂项'));
 	$form->addInput($misc->multiMode());
 }
 function timer_start() {

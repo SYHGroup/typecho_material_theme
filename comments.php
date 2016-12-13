@@ -45,7 +45,7 @@
 								<label for="textarea" class="col-sm-2 control-label required">内容</label>
 								<div class="col-sm-9">
 									<div class="form-control-wrapper">
-										<textarea rows="9" cols="50" name="text" id="textarea" class="form-control textarea  empty" required=""></textarea>
+										<textarea rows="9" cols="50" name="text" id="textarea" class="form-control textarea  empty" required=""<?php if ( !empty($this->options->misc) && in_array('ShowCCBY', $this->options->misc) ) : ?>placeholder="除非特别注明，本站内容采用 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议 进行许可。"<?php endif; ?>></textarea>
 										<span class="material-input"></span>
 									</div>
 								</div>

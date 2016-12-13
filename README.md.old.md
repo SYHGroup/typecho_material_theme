@@ -14,8 +14,6 @@ Material Design Theme For Typecho
 
  _日期归档修改_
 
- _启用CC-BY协议_
-
 - HanSon:  
 
  _自定义图片与标语_
