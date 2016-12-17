@@ -2,7 +2,11 @@
  
 Material Design Theme For Typecho  
 
-![截图](https://github.com/simonsmh/typecho_material_theme/blob/master/screenshot.png)  
+STATUS: ABANDONED.   
+
+https://github.com/viosey/typecho-theme-material  
+
+![截图](https://github.com/simonsmh/typecho_material_theme/blob/master/screenshot.png)   
 
 # Feature
 
@@ -51,6 +55,3 @@ cd usr/plugins
 git clone https://github.com/HanSon/Links_for_Material_Theme.git Links
 git clone https://github.com/simonsmh/TiebaSmilies_Typecho.git Smilies
 ```
-
-[广告：Pixiv排行抓取程序](https://github.com/simonsmh/Pixiv-Ranking-PHP)  
-
