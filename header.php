@@ -47,7 +47,7 @@
 					<?php while($category->next()): ?>
 					<?php if(count($category->children)):?>
 					<li class="dropdown">
-						<a href="<?php $category->permalink(); ?>" data-target="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $category->name?><b class="caret"></b></a>
+						<a data-target="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $category->name?><b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li><a href="<?php echo $category->permalink(); ?>"><?php echo $category->name ?></a></li>
 							<?php foreach($category->children as $k=>$v):?>
@@ -57,7 +57,7 @@
 					</li>
 					<?php else:?>
 					<?php if($category->levels == 0):?>
-					<li <?php if ($this->is('category', $category->slug)): ?>class="active" <?php endif; ?> style="<?php print_r($category->children) ?> "><a href="<?php $category->permalink(); ?>" title="<?php $category->name(); ?>"><?php $category->name(); ?></a></li>
+					<li <?php if ($this->is('category', $category->slug)): ?>class="active" <?php endif; ?>><a href="<?php $category->permalink(); ?>" title="<?php $category->name(); ?>"><?php $category->name(); ?></a></li>
 					<?php endif;?>
 					<?php endif;?>
 					<?php endwhile; ?>
